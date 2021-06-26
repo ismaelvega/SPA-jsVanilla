@@ -13,9 +13,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js$/i,
         use: {
-          loader: 'babel-loader'
+          loader: 'babel-loader',
         },
         exclude: /node_modules/
       }
@@ -28,6 +28,6 @@ module.exports = {
         template: './public/index.html',
         filename: './index.html'
       }
-    )
+    ),
   ]
 }
